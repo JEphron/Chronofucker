@@ -1,12 +1,12 @@
 README
-~~~~~~~
 
-Note: there is a bug in images2gif which you must fix manually
-you must find
+Note: This project requires images2gif. There is a bug in images2gif.py which you must fix manually.
 
-    `for im in images:
-        palettes.append( getheader(im)[1] )`
-    replace with
+You must find
 
-    `for im in images:
-        palettes.append(im.palette.getdata()[1])`
+    for im in images:
+        palettes.append( getheader(im)[1] )
+and replace it with
+
+    for im in images:
+        palettes.append(im.palette.getdata()[1])
