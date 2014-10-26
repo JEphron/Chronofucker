@@ -135,13 +135,20 @@ def process_chunks(chunks, should_reverse_chunks):
     print(map(lambda c:c.id, processed))
     return processed
 
+def read_args():
+    try:
+        filename = sys.argv[1]
+    except IndexError:
+        print("Error: please specify a file name")
+        sys.exit()
+    return filename
 
 if __name__ == '__main__':
     
-    # filename = read_args()
+    filename = read_args()
     start = time.time()
     # load the .gif file as an image sequence sequence
-    frames = load_sequence("130407.gif") 
+    frames = load_sequence(filename) 
     # split the sequence into chunks for multiprocessing
     chunks = create_image_chunks(frames, number_of_chunks=cpu_count()*2) # should check for hyperthreading?
     # distribute chunks to subprocesses
