@@ -1,6 +1,6 @@
 ##TimeCube
-
-If you would acknowledge 
+```
+If you would acknowledge
 simple existing math proof 
 that 4 harmonic corner days 
 rotate simultaneously around 
@@ -12,7 +12,7 @@ This page you see - cannot
 exist without its anti-side 
 existence, as +0- antipodes. 
 Add +0- as One = nothing. 
-
+```
 Note: This project requires images2gif. There is a bug in images2gif.py which you must fix manually.
 
 You must find
