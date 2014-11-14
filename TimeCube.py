@@ -170,5 +170,5 @@ if __name__ == '__main__':
     images2gif.writeGif(output_path, result , 0.04)
     end = time.time()
     elapsed = '%.2f' % (end - start)
-    print('Chronofucked in ' + elapsed + ' seconds!')
+    print('Processed in ' + elapsed + ' seconds!')
 
