@@ -166,7 +166,7 @@ if __name__ == '__main__':
     processed = process_chunks(chunks, should_reverse_chunks=False)
     # recombine procesed pieces
     result = dechunkify(processed)
-    output_path = os.path.splitext(os.path.basename(filename))[0]+"_chronofucked.gif"
+    output_path = os.path.splitext(os.path.basename(filename))[0]+"_cubed.gif"
     images2gif.writeGif(output_path, result , 0.04)
     end = time.time()
     elapsed = '%.2f' % (end - start)
